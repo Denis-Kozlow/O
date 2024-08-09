@@ -1,6 +1,6 @@
-from db import DepOrm, new_session
-from schemas import SDepAdd
-from calc import ret_dep
+from app.db import DepOrm, new_session
+from app.schemas import SDepAdd
+from app.calc import ret_dep
 
 
 class DepRepository:
