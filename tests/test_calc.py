@@ -1,6 +1,6 @@
-from app.appl.calc import ret_dep, calc_date, calc_summ
+from app.calc import ret_dep, calc_date, calc_summ
 from pytest import mark, raises
-from app.appl.schemas import SDepAdd
+from app.schemas import SDepAdd
 from datetime import datetime
 from contextlib import nullcontext as does_not_raise
 

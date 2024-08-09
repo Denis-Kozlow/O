@@ -1,10 +1,5 @@
-# from fastapi.testclient import TestClient
-# from pytest import mark
-from app.appl.main import app
-# import app.appl.db
-
-# client = TestClient(app)
-
+# from fastapi import testclient
+# from app.app.main import app
 
 # @mark.parametrize(
 #     "dt, periods, amount, rate, expected_status, expected_json",
@@ -23,5 +18,3 @@ from app.appl.main import app
 #         ),
 #     ],
 # )
-# def test_app(dt, periods, amount, rate, expected_status, expected_json):
-#     assert 1 == 1
