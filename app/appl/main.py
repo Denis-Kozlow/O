@@ -17,5 +17,5 @@ app = FastAPI(lifespan=lifespan)
 
 @app.post("/depos")
 async def add_dep(dep: SDepAdd = Depends()) -> dict:
-    new_dep_id = await DepRepository.add_dep(dep)
-    return new_dep_id
+    resp = await DepRepository.add_dep(dep)
+    return resp
