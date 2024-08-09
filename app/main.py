@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
 from contextlib import asynccontextmanager
-from db import create_tables, delete_tables
-from schemas import SDepAdd
-from repository import DepRepository
+from app.db import create_tables, delete_tables
+from app.schemas import SDepAdd
+from app.repository import DepRepository
 import uvicorn
 
 

@@ -1,6 +1,6 @@
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
-from schemas import SDepAdd
+from app.schemas import SDepAdd
 FORMAT = "%d.%m.%Y"
 
 FORMAT = "%d.%m.%Y"
