@@ -3,7 +3,6 @@ from contextlib import asynccontextmanager
 from app.db import create_tables, delete_tables
 from app.schemas import SDepAdd
 from app.repository import DepRepository
-import uvicorn
 
 
 @asynccontextmanager
