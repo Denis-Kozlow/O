@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
 from contextlib import asynccontextmanager
-from db import create_tables, delete_tables
-from schemas import SDepAdd
-from repository import DepRepository
+from app.db import create_tables, delete_tables
+from app.schemas import SDepAdd
+from app.repository import DepRepository
 import uvicorn
 
 
@@ -20,5 +20,3 @@ app = FastAPI(lifespan=lifespan)
 async def add_dep(dep: SDepAdd = Depends()) -> dict:
     resp = await DepRepository.add_dep(dep)
     return resp
-if __name__ == '__main__':
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
